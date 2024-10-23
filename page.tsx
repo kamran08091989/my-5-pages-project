@@ -1,8 +1,12 @@
-export default function Home(){
-  return(
-    <div>
-      <h1 className="text-red-800 font-bold text-center bg-blue-200 border-8 pl-5 ml-4 text-2xl;
- ">Home page</h1>
-    </div>
-  );
-}
+import { resolve } from "path";
+
+export default async function About(){
+  await new Promise((resolve) => {
+    setTimeout(resolve, 5000);
+  })
+    return(
+      <div>
+        <h1>About page</h1>
+      </div>
+    );
+  }
